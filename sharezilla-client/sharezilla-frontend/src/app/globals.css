@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary-color: #2563eb; /* Tailwind's blue-600 */
+  --secondary-color: #4b5563; /* Tailwind's gray-600 */
+  --input-background: #f9fafb; /* Light gray for input fields */
+  --input-text: #111827; /* Dark text for input fields */
+  --border-radius: 0.375rem; /* Tailwind's rounded-md */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --input-background: #1f2937; /* Dark gray for input fields */
+    --input-text: #ffffff; /* Light text for input fields */
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1d4ed8; /* Darker blue */
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: var(--input-background);
+  color: var(--input-text);
+  border: 1px solid var(--secondary-color);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.5); /* Blue focus ring */
+}
+
+label {
+  color: var(--foreground);
+  font-weight: 500;
+}
+
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: var(--background);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: var(--border-radius);
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.form-container {
+  margin-bottom: 2rem; /* Equivalent to mb-8 */
+  padding: 1.5rem; /* Equivalent to p-6 */
+  background-color: var(--input-background); /* Use the input background color for consistency */
+  border-radius: var(--border-radius); /* Consistent rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border: 1px solid var(--secondary-color); /* Add a border for better definition */
+}

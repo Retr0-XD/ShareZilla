@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/sharezilla
+    driver-class-name: org.postgresql.Driver
+    username: sakthi
+    password: 5326
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+server:
+  address: 0.0.0.0
+  port: 8080
+
+  # (Optional) Enable H2 console only if still using H2 for testing
+  # h2:
+  #   console:
+  #     enabled: true
