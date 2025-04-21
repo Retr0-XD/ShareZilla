@@ -1,4 +1,5 @@
 import Link from "next/link";
+import "../app/globals.css"; // Import global styles
 
 export default function Home() {
   return (
@@ -59,7 +60,7 @@ export default function Home() {
             <h2 className="text-4xl font-bold mb-8 text-blue-900">About ShareZilla</h2>
             <p className="text-lg text-gray-700 leading-relaxed">
               ShareZilla is a secure and user-friendly platform designed to make file
-              sharing and management effortless. Whether you're an individual, a team,
+              sharing and management effortless. Whether youre an individual, a team,
               or an organization, ShareZilla provides the tools you need to upload,
               share, and manage files with ease and confidence.
             </p>
@@ -104,7 +105,7 @@ export default function Home() {
             href="/register"
             className="bg-white text-blue-600 px-10 py-4 rounded-lg font-semibold hover:bg-blue-50 transform hover:-translate-y-1 transition duration-300 shadow-lg inline-block"
           >
-            Sign Up Now — It's Free
+            Sign Up Now — Its Free
           </Link>
         </div>
       </section>
