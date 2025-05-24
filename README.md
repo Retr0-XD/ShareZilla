@@ -1,5 +1,4 @@
 
-```markdown
 # 🚀 ShareZilla
 
 **ShareZilla** is a lightweight, secure, and easy-to-use **local file sharing system** that allows users to share files within a local network. Built on **Spring Boot**, it offers fast file transfers without the need for cloud storage or internet access.
@@ -44,7 +43,7 @@ ShareZilla/
 ├── README.md
 └── pom.xml
 
-````
+
 
 ---
 
